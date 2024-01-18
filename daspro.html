@@ -160,6 +160,141 @@
           <p>Link pembelajaran : <a href="https://youtu.be/ZksODaMsNTU" class="text-light">https://youtu.be/ZksODaMsNTU</a></p>
         </div>
 
+        <div id="percabangan" class="card-text">
+          <br />
+          <h2 style="color: cornflowerblue; margin-top: 2em">
+            <span>BENTUK PERCABANGAN PEMROGRAMAN</span>
+          </h2>
+          <p>
+            Fungsi percabangan yaitu untuk memecahkan masalah dan mengambil  keputusan 
+            di antara beberapa pilihan tergantung pada situasi yang dihadapi 
+            program. Terdapat beberapa bentuk percabangan pemrograman dalam C++, yaitu :
+          </p>
+          <h3 style="color: lightsteelblue">PERCABANGAN IF</h3>
+          <p>
+            Percabangan if merupakan percabangan yang hanya memiliki satu blok 
+            pilihan saat kondisi bernilai benar. Pada percabangan IF, jika kondisi 
+            terpenuhi akan memberikan hasil pernyataan dari IF tersebut, tetapi jika 
+            tidak terpenuhi maka tidak akan memberikan hasil apa-apa. <br />
+            Penulisan percabangan IF yaitu :
+            <br /> <br>
+            if (kondisi) then
+            <pre>        aksi</pre>
+            Contoh : <br /> <br>
+            <img src="assets/img/if.png" alt="if" style="width: 100%; justify-content: center;"> <br> <br>
+            Pada kasus tersebut apabila nilai inputan kurang dari 5, maka output 
+            yang keluar adalah <br> Output berhasil tidak muncul karena nilai x kurang dari 5 <br><br>
+            Namun apabila nilai inputan lebih dari 5, maka output yang keluar adalah <br>
+            Berhasil <br>
+            Output berhasil tidak muncul karena nilai x kurang dari 5 <br>
+          </p>
+
+          <h3 style="color: lightsteelblue">PERCABANGAN IF/ELSE</h3>
+          <p>
+            Ada suatu tambahan agar IF dapat berjalan sesuai keinginan kita yaitu ELSE, 
+            yang mempunyai fungsi memberikan hasil jika pernyataan IF tidak terpenuhi. <br />
+            Penulisan percabangan IF yaitu :
+            <br /> <br>
+            if (kondisi) then
+            <pre>        aksi-1</pre>
+            else (not kondisi)
+            <pre>        aksi-2</pre>
+            Contoh : <br /> <br>
+            <img src="assets/img/ifelse.png" alt="ifelse" style="width: 100%; justify-content: center;"> <br> <br>
+            Pada kasus tersebut apabila nilai inputan lebih dari 5, maka output 
+            yang keluar adalah <br> 
+            Berhasil!! Nilai lebih dari 5 <br><br>
+            Namun apabila nilai inputan kurang dari 5, maka output yang keluar adalah <br>
+            Nilai kurang dari 5 <br>
+          </p>
+
+          <h3 style="color: lightsteelblue">PERCABANGAN IF/ELSE/IF</h3>
+          <p>
+            Else if berarti sebuah pilihan selain if else. Dibutuhkan jika ingin membuat 
+            pertanyaan lain lagi. <br />
+            <br />
+            if (kondisi-1) then
+            <pre>        aksi-1</pre>
+            else if (kondisi-2) then
+            <pre>        aksi-2</pre>
+            else (not kondisi)
+            <pre>        aksi-3</pre>
+            Contoh : <br /> <br>
+            <img src="assets/img/ifelseif.png" alt="ifelseif" style="width: 100%; justify-content: center;"> <br> <br>
+            Pada kasus tersebut apabila nilai inputan lebih dari sama dengan 85, maka output 
+            yang keluar adalah <br> 
+            Kimia Anda A<br><br>
+            Apabila nilai inputan lebih dari sama dengan 70, maka output yang keluar adalah <br>
+            Kimia Anda B<br><br>
+            Apabila nilai inputan lebih dari sama dengan 55, maka output yang keluar adalah <br>
+            Kimia Anda C<br><br>
+            Namun apabila nilai inputan tidak sesuai dengan ketiga kondisi tersebut, maka 
+            output yang keluar adalah <br>
+            Kimia Anda D<br>
+          </p>
+
+          <h3 style="color: lightsteelblue">PERCABANGAN BERSARANG (NESTED)</h3>
+          <p>
+            Nested IF adalah pernyataan IF yang ada di dalam pernyataan IF. <br />
+            Penulisan percabangan IF yaitu :
+            <br /> <br>
+            if (kondisi) then
+            <pre>        aksi //bisa dibuat bisa tidak</pre>
+            <pre>        if (kondisi) then</pre>
+            <pre>                 aksi</pre>
+            <pre>        else</pre>
+            <pre>                 aksi</pre>
+            else 
+            <pre>        aksi</pre>
+            <pre>        if (kondisi) then</pre>
+            <pre>                 aksi</pre>
+            <pre>        else</pre>
+            <pre>                 aksi</pre>
+            Contoh : <br /> <br>
+            <img src="assets/img/nested.png" alt="nested" style="width: 100%; justify-content: center;"> <br> <br>
+            Cara membacanya adalah pada IF awal apabila a &lt; b dan b &lt; c, maka outputnya adalah a &lt; b &lt; c. 
+            Namun apabila b &gt; c ada 2 kemungkinan bisa jadi c itu lebih besar a atau justru sebaliknya. Maka apabila 
+            c &gt; a outputnya adalah a &lt; c &lt; b. Apabila c &lt; a outputnya adalah c &lt; a &lt; b. Pada ELSE pun 
+            cara membacanya sama.
+          </p>
+
+          <h3 style="color: lightsteelblue">SWITCH/CASE</h3>
+          <p>
+            Percabangan switch/case adalah bentuk lain dari percabangan if/else/if. 
+            Kondisi SWITCH CASE terdiri dari 2 bagian, yakni perintah SWITCH dimana 
+            terdapat nama variabel yang akan diperiksa, serta 1 atau lebih perintah 
+            CASE untuk setiap nilai yang akan diperiksa. <br />
+            Penulisan percabangan SWITCH/CASE yaitu :
+            <br /> <br>
+            switch (variabel) 
+            <pre>    case (value):</pre>
+            <pre>             //blok kode</pre>
+            <pre>             break;</pre>
+            <pre>    case (value):</pre>
+            <pre>             //blok kode</pre>
+            <pre>             break;</pre>
+            <pre>    default:</pre>
+            <pre>             //blok kode</pre>
+            Contoh : <br /> <br>
+            <img src="assets/img/switchcase.png" alt="switchcase" style="width: 100%; justify-content: center;"> <br> <br>
+            Hasil kode program: <br>
+            Input Nilai Anda (A - E): A <br>
+            Pertahankan! <br><br>
+ 
+            Input Nilai Anda (A - E): B <br>
+            Harus lebih baik lagi <br> <br>
+ 
+            Input Nilai Anda (A - E): D <br>
+            Jangan keseringan main <br> <br>
+ 
+            Input Nilai Anda (A - E): F <br>
+            Maaf, format nilai tidak sesuai <br>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
 
     <!-- Footer Start -->
     <footer class="p-3 bg-light text-center mt-5 text-black" style="width: 100%;background-size: cover;">
